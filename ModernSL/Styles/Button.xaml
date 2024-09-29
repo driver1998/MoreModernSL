@@ -11,9 +11,9 @@
 
     <Style x:Key="DefaultButtonStyle" TargetType="Button">
         <Style.Setters>
-            <Setter Property="Background" Value="{StaticResource ButtonBackground}" />
-            <Setter Property="Foreground" Value="{StaticResource ButtonForeground}" />
-            <Setter Property="BorderBrush" Value="{StaticResource ButtonBorderBrush}" />
+            <Setter Property="Background" Value="{StaticResource ControlFillColorDefaultBrush}" />
+            <Setter Property="Foreground" Value="{StaticResource TextFillColorPrimaryBrush}" />
+            <Setter Property="BorderBrush" Value="{StaticResource ControlElevationBorderBrush}" />
             <Setter Property="BorderThickness" Value="{StaticResource ButtonBorderThemeThickness}" />
             <Setter Property="Padding" Value="{StaticResource ButtonPadding}" />
             <Setter Property="HorizontalAlignment" Value="Left" />
@@ -66,13 +66,13 @@
                                     <VisualState x:Name="MouseOver">
                                         <Storyboard>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Background" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ButtonBackgroundPointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlFillColorSecondaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Background" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ButtonBorderBrushPointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlElevationBorderBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ButtonForegroundPointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorPrimaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                         </Storyboard>
                                     </VisualState>
@@ -80,13 +80,13 @@
                                     <VisualState x:Name="Pressed">
                                         <Storyboard>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Background" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ButtonBackgroundPressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlFillColorTertiaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Background" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ButtonBorderBrushPressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlStrokeColorDefaultBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ButtonForegroundPressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorSecondaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="FocusVisualElement" Storyboard.TargetProperty="Opacity">
                                                 <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource FocusVisualElementOpacityPressed}" />
@@ -97,13 +97,13 @@
                                     <VisualState x:Name="Disabled">
                                         <Storyboard>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Background" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ButtonBackgroundDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlFillColorDisabledBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Background" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ButtonBorderBrushDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlStrokeColorDefaultBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ButtonForegroundDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorDisabledBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                         </Storyboard>
                                     </VisualState>
@@ -137,9 +137,9 @@
         BasedOn="{StaticResource DefaultButtonStyle}"
         TargetType="Button">
         <Style.Setters>
-            <Setter Property="Foreground" Value="{StaticResource AccentButtonForeground}" />
-            <Setter Property="Background" Value="{StaticResource AccentButtonBackground}" />
-            <Setter Property="BorderBrush" Value="{StaticResource AccentButtonBorderBrush}" />
+            <Setter Property="Foreground" Value="{StaticResource TextOnAccentFillColorPrimaryBrush}" />
+            <Setter Property="Background" Value="{StaticResource AccentFillColorDefaultBrush}" />
+            <Setter Property="BorderBrush" Value="{StaticResource AccentControlElevationBorderBrush}" />
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
@@ -180,13 +180,13 @@
                                     <VisualState x:Name="MouseOver">
                                         <Storyboard>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Background" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AccentButtonBackgroundPointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AccentFillColorSecondaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Border" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AccentButtonBorderBrushPointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AccentControlElevationBorderBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AccentButtonForegroundPointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextOnAccentFillColorPrimaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                         </Storyboard>
                                     </VisualState>
@@ -194,13 +194,13 @@
                                     <VisualState x:Name="Pressed">
                                         <Storyboard>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Background" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AccentButtonBackgroundPressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AccentFillColorTertiaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Border" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AccentButtonBorderBrushPressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AccentButtonForegroundPressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextOnAccentFillColorSecondaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="FocusVisualElement" Storyboard.TargetProperty="Opacity">
                                                 <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource FocusVisualElementOpacityPressed}" />
@@ -211,13 +211,13 @@
                                     <VisualState x:Name="Disabled">
                                         <Storyboard>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Background" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AccentButtonBackgroundDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AccentFillColorDisabledBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Border" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AccentButtonBorderBrushDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AccentButtonForegroundDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextOnAccentFillColorDisabledBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                         </Storyboard>
                                     </VisualState>

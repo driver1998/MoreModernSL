@@ -53,7 +53,7 @@
         <Style.Setters>
             <Setter Property="Height" Value="{StaticResource ComboBoxItemPillHeight}" />
             <Setter Property="Width" Value="{StaticResource ComboBoxItemPillWidth}" />
-            <Setter Property="Fill" Value="{StaticResource ComboBoxItemPillFillBrush}" />
+            <Setter Property="Fill" Value="{StaticResource AccentFillColorDefaultBrush}" />
             <Setter Property="RadiusX" Value="{Binding Source={StaticResource ComboBoxItemPillCornerRadius}, Converter={StaticResource TopLeftCornerRadiusDoubleValueConverter}}" />
             <Setter Property="RadiusY" Value="{Binding Source={StaticResource ComboBoxItemPillCornerRadius}, Converter={StaticResource BottomRightCornerRadiusDoubleValueConverter}}" />
             <Setter Property="RenderTransformOrigin" Value="0.5,0.5" />
@@ -76,8 +76,8 @@
 
     <Style x:Key="DefaultComboBoxItemStyle" TargetType="ComboBoxItem">
         <Style.Setters>
-            <Setter Property="Foreground" Value="{StaticResource ComboBoxItemForeground}" />
-            <Setter Property="Background" Value="{StaticResource ComboBoxItemBackground}" />
+            <Setter Property="Foreground" Value="{StaticResource TextFillColorPrimaryBrush}" />
+            <Setter Property="Background" Value="{StaticResource SubtleFillColorTransparentBrush}" />
             <Setter Property="Padding" Value="{StaticResource ComboBoxItemThemePadding}" />
             <Setter Property="HorizontalContentAlignment" Value="Stretch" />
             <Setter Property="VerticalContentAlignment" Value="Center" />
@@ -130,39 +130,39 @@
                                     <VisualState x:Name="PointerOver">
                                         <Storyboard>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LayoutRoot" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxItemBackgroundPointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorSecondaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LayoutRoot" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxItemBorderBrushPointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorSecondaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxItemForegroundPointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorPrimaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                         </Storyboard>
                                     </VisualState>
                                     <VisualState x:Name="Disabled">
                                         <Storyboard>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LayoutRoot" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxItemBackgroundDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorDisabledBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LayoutRoot" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxItemBorderBrushDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorDisabledBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxItemForegroundDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorDisabledBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                         </Storyboard>
                                     </VisualState>
                                     <VisualState x:Name="Pressed">
                                         <Storyboard>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LayoutRoot" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxItemBackgroundPressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTertiaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LayoutRoot" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxItemBorderBrushPressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTertiaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxItemForegroundPressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorSecondaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PillTransform" Storyboard.TargetProperty="ScaleY">
                                                 <SplineDoubleKeyFrame
@@ -178,13 +178,13 @@
                                                 <DiscreteObjectKeyFrame KeyTime="0" Value="1" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LayoutRoot" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxItemBackgroundSelected}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorSecondaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LayoutRoot" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxItemBorderBrushSelected}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorSecondaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxItemForegroundSelected}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorPrimaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                         </Storyboard>
                                     </VisualState>
@@ -194,13 +194,13 @@
                                                 <DiscreteObjectKeyFrame KeyTime="0" Value="1" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LayoutRoot" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxItemBackgroundSelectedUnfocused}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTertiaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LayoutRoot" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxItemBorderBrushSelectedUnfocused}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxItemForegroundSelectedUnfocused}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorPrimaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                         </Storyboard>
                                     </VisualState>
@@ -210,13 +210,13 @@
                                                 <DiscreteObjectKeyFrame KeyTime="0" Value="1" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LayoutRoot" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxItemBackgroundSelectedDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorSecondaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LayoutRoot" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxItemBorderBrushSelectedDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorSecondaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxItemForegroundSelectedDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorDisabledBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                         </Storyboard>
                                     </VisualState>
@@ -226,13 +226,13 @@
                                                 <DiscreteObjectKeyFrame KeyTime="0" Value="1" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LayoutRoot" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxItemBackgroundSelectedPointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTertiaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LayoutRoot" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxItemBorderBrushSelectedPointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTertiaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxItemForegroundSelectedPointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorPrimaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                         </Storyboard>
                                     </VisualState>
@@ -248,13 +248,13 @@
                                                     Value="{StaticResource ComboBoxItemPillMinScale}" />
                                             </DoubleAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LayoutRoot" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxItemBackgroundSelectedPressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorSecondaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LayoutRoot" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxItemBorderBrushSelectedPressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorSecondaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxItemForegroundSelectedPressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorSecondaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                         </Storyboard>
                                     </VisualState>
@@ -323,7 +323,7 @@
                                 x:Name="PlaceholderTextContentPresenter"
                                 Margin="{TemplateBinding BorderThickness}"
                                 Padding="{TemplateBinding Padding}"
-                                Foreground="{StaticResource TextControlPlaceholderForeground}"
+                                Foreground="{StaticResource TextFillColorSecondaryBrush}"
                                 IsHitTestVisible="False"
                                 Text="{TemplateBinding primitives:ControlHelper.PlaceholderText}"
                                 TextAlignment="{TemplateBinding TextAlignment}"
@@ -340,9 +340,9 @@
         <Style.Setters>
             <Setter Property="Padding" Value="{StaticResource ComboBoxPadding}" />
             <Setter Property="MaxDropDownHeight" Value="504" />
-            <Setter Property="Foreground" Value="{StaticResource ComboBoxForeground}" />
-            <Setter Property="Background" Value="{StaticResource ComboBoxBackground}" />
-            <Setter Property="BorderBrush" Value="{StaticResource ComboBoxBorderBrush}" />
+            <Setter Property="Foreground" Value="{StaticResource TextFillColorPrimaryBrush}" />
+            <Setter Property="Background" Value="{StaticResource ControlFillColorDefaultBrush}" />
+            <Setter Property="BorderBrush" Value="{StaticResource ControlElevationBorderBrush}" />
             <Setter Property="BorderThickness" Value="{StaticResource ComboBoxBorderThemeThickness}" />
             <Setter Property="primitives:ComboBoxHelper.TextBoxStyle" Value="{StaticResource ComboBoxTextBoxStyle}" />
             <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled" />
@@ -353,7 +353,7 @@
             <Setter Property="VerticalAlignment" Value="Top" />
             <Setter Property="FontFamily" Value="{StaticResource ContentControlThemeFontFamily}" />
             <Setter Property="FontSize" Value="{StaticResource ControlContentThemeFontSize}" />
-            <Setter Property="primitives:ControlHelper.PlaceholderForeground" Value="{StaticResource ComboBoxPlaceHolderForeground}" />
+            <Setter Property="primitives:ControlHelper.PlaceholderForeground" Value="{StaticResource TextFillColorSecondaryBrush}" />
             <Setter Property="primitives:ComboBoxHelper.KeepInteriorCornersSquare" Value="True" />
             <Setter Property="primitives:ControlHelper.CornerRadius" Value="{StaticResource ControlCornerRadius}" />
             <Setter Property="Template">
@@ -401,7 +401,7 @@
                                 VerticalAlignment="Top"
                                 FlowDirection="{TemplateBinding FlowDirection}"
                                 FontWeight="{StaticResource ComboBoxHeaderThemeFontWeight}"
-                                Foreground="{StaticResource ComboBoxHeaderForeground}"
+                                Foreground="{StaticResource TextFillColorPrimaryBrush}"
                                 IsTabStop="False"
                                 Visibility="{TemplateBinding primitives:ControlHelper.HeaderVisibility}">
                                 <ContentPresenter
@@ -415,8 +415,8 @@
                                 Grid.Column="0"
                                 Grid.ColumnSpan="2"
                                 Margin="-4"
-                                Background="{StaticResource ComboBoxBackgroundFocused}"
-                                BorderBrush="{StaticResource ComboBoxBackgroundBorderBrushFocused}"
+                                Background="{StaticResource ControlFillColorDefaultBrush}"
+                                BorderBrush="{StaticResource FocusStrokeColorOuterBrush}"
                                 BorderThickness="{StaticResource ComboBoxBackgroundBorderThicknessFocused}"
                                 CornerRadius="{TemplateBinding primitives:ControlHelper.CornerRadius}"
                                 Opacity="0" />
@@ -517,7 +517,7 @@
                                 VerticalAlignment="Center"
                                 FontFamily="{StaticResource SymbolThemeFontFamily}"
                                 FontSize="12"
-                                Foreground="{StaticResource ComboBoxDropDownGlyphForeground}"
+                                Foreground="{StaticResource TextFillColorSecondaryBrush}"
                                 Glyph="&#xE0E5;"
                                 IsHitTestVisible="False" />
                             <ContentControl
@@ -525,7 +525,7 @@
                                 Grid.Row="2"
                                 Grid.Column="0"
                                 Grid.ColumnSpan="2"
-                                Foreground="{StaticResource SystemControlDescriptionTextForegroundBrush}"
+                                Foreground="{StaticResource SystemControlPageTextBaseMediumBrush}"
                                 IsTabStop="False"
                                 Visibility="{TemplateBinding primitives:ControlHelper.DescriptionVisibility}">
                                 <ContentPresenter x:Name="DescriptionPresenter" Content="{TemplateBinding primitives:ControlHelper.Description}" />
@@ -537,14 +537,14 @@
                                     MaxHeight="{TemplateBinding MaxDropDownHeight}"
                                     Margin="0,-0.5,0,-1"
                                     HorizontalAlignment="Stretch"
-                                    Background="{StaticResource ComboBoxDropDownBackground}"
-                                    BorderBrush="{StaticResource ComboBoxDropDownBorderBrush}"
+                                    Background="{StaticResource AcrylicInAppFillColorDefaultBrush}"
+                                    BorderBrush="{StaticResource SurfaceStrokeColorFlyoutBrush}"
                                     BorderThickness="{StaticResource ComboBoxDropdownBorderThickness}"
                                     CornerRadius="{StaticResource OverlayCornerRadius}">
                                     <Border Padding="{StaticResource ComboBoxDropdownBorderPadding}" CornerRadius="{Binding ElementName=PopupBorder, Path=CornerRadius}">
                                         <ScrollViewer
                                             x:Name="ScrollViewer"
-                                            Foreground="{StaticResource ComboBoxDropDownForeground}"
+                                            Foreground="{StaticResource TextFillColorPrimaryBrush}"
                                             HorizontalScrollBarVisibility="{TemplateBinding ScrollViewer.HorizontalScrollBarVisibility}"
                                             VerticalScrollBarVisibility="{TemplateBinding ScrollViewer.VerticalScrollBarVisibility}">
                                             <ItemsPresenter Margin="{StaticResource ComboBoxDropdownContentMargin}" />
@@ -558,54 +558,54 @@
                                     <VisualState x:Name="MouseOver">
                                         <Storyboard>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Background" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxBackgroundPointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlFillColorSecondaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Background" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxBorderBrushPointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlElevationBorderBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxForegroundPointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorPrimaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PlaceholderTextBlock" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxPlaceHolderForegroundPointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorSecondaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                         </Storyboard>
                                     </VisualState>
                                     <VisualState x:Name="Pressed">
                                         <Storyboard>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Background" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxBackgroundPressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlFillColorTertiaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Background" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxBorderBrushPressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlStrokeColorDefaultBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxForegroundPressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorSecondaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PlaceholderTextBlock" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxPlaceHolderForegroundPressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorTertiaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                         </Storyboard>
                                     </VisualState>
                                     <VisualState x:Name="Disabled">
                                         <Storyboard>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Background" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxBackgroundDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlFillColorDisabledBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Background" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxBorderBrushDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlStrokeColorDefaultBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="HeaderContentPresenter" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxHeaderForegroundDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorDisabledBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxForegroundDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorDisabledBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PlaceholderTextBlock" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxPlaceHolderForegroundDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorDisabledBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="DropDownGlyph" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ComboBoxDropDownGlyphForegroundDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorDisabledBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                         </Storyboard>
                                     </VisualState>

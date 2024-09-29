@@ -25,9 +25,9 @@
 
     <Style x:Key="DefaultCheckBoxStyle" TargetType="CheckBox">
         <Style.Setters>
-            <Setter Property="Background" Value="{StaticResource CheckBoxBackgroundUnchecked}" />
-            <Setter Property="Foreground" Value="{StaticResource CheckBoxForegroundUnchecked}" />
-            <Setter Property="BorderBrush" Value="{StaticResource CheckBoxBorderBrushUnchecked}" />
+            <Setter Property="Background" Value="{StaticResource SubtleFillColorTransparentBrush}" />
+            <Setter Property="Foreground" Value="{StaticResource TextFillColorPrimaryBrush}" />
+            <Setter Property="BorderBrush" Value="{StaticResource SubtleFillColorTransparentBrush}" />
             <Setter Property="Padding" Value="{StaticResource CheckBoxPadding}" />
             <Setter Property="HorizontalAlignment" Value="Left" />
             <Setter Property="VerticalAlignment" Value="Center" />
@@ -63,17 +63,17 @@
                                             x:Name="NormalRectangle"
                                             Width="{StaticResource CheckBoxSize}"
                                             Height="{StaticResource CheckBoxSize}"
-                                            Fill="{StaticResource CheckBoxCheckBackgroundFillUnchecked}"
+                                            Fill="{StaticResource ControlAltFillColorSecondaryBrush}"
                                             RadiusX="{Binding Source={StaticResource ControlCornerRadius}, Converter={StaticResource TopLeftCornerRadiusDoubleValueConverter}}"
                                             RadiusY="{Binding Source={StaticResource ControlCornerRadius}, Converter={StaticResource BottomRightCornerRadiusDoubleValueConverter}}"
-                                            Stroke="{StaticResource CheckBoxCheckBackgroundStrokeUnchecked}"
+                                            Stroke="{StaticResource ControlStrongStrokeColorDefaultBrush}"
                                             StrokeThickness="{StaticResource CheckBoxBorderThickness}"
                                             UseLayoutRounding="False" />
                                         <local:FontIcon
                                             x:Name="CheckGlyph"
                                             FontFamily="{StaticResource SymbolThemeFontFamily}"
                                             FontSize="{StaticResource CheckBoxGlyphSize}"
-                                            Foreground="{StaticResource CheckBoxCheckGlyphForegroundUnchecked}"
+                                            Foreground="{StaticResource TextOnAccentFillColorPrimaryBrush}"
                                             Glyph="{StaticResource CheckBoxCheckedGlyph}"
                                             Opacity="0" />
                                     </Grid>
@@ -108,66 +108,66 @@
                                     <VisualState x:Name="Normal">
                                         <Storyboard>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxForegroundUnchecked}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorPrimaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxBackgroundUnchecked}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxBorderBrushUnchecked}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Stroke">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckBackgroundStrokeUnchecked}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlStrongStrokeColorDefaultBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Fill">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckBackgroundFillUnchecked}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlAltFillColorSecondaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckGlyphForegroundUnchecked}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextOnAccentFillColorPrimaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                         </Storyboard>
                                     </VisualState>
                                     <VisualState x:Name="MouseOver">
                                         <Storyboard>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxForegroundUncheckedPointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorPrimaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxBackgroundUncheckedPointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxBorderBrushUncheckedPointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Stroke">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckBackgroundStrokeUncheckedPointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlStrongStrokeColorDefaultBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Fill">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckBackgroundFillUncheckedPointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlAltFillColorTertiaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckGlyphForegroundUncheckedPointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextOnAccentFillColorPrimaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                         </Storyboard>
                                     </VisualState>
                                     <VisualState x:Name="Pressed">
                                         <Storyboard>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxForegroundUncheckedPressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorPrimaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxBackgroundUncheckedPressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxBorderBrushUncheckedPressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Stroke">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckBackgroundStrokeUncheckedPressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlStrongStrokeColorDisabledBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Fill">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckBackgroundFillUncheckedPressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlAltFillColorQuarternaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckGlyphForegroundUncheckedPressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextOnAccentFillColorPrimaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="FocusVisualElement" Storyboard.TargetProperty="Opacity">
                                                 <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource FocusVisualElementOpacityPressed}" />
@@ -177,41 +177,41 @@
                                     <VisualState x:Name="Disabled">
                                         <Storyboard>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxForegroundUncheckedDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorDisabledBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxBackgroundUncheckedDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxBorderBrushUncheckedDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Stroke">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckBackgroundStrokeUncheckedDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlStrongStrokeColorDisabledBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Fill">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckBackgroundFillUncheckedDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlAltFillColorDisabledBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckGlyphForegroundUncheckedDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextOnAccentFillColorDisabledBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                         </Storyboard>
                                     </VisualState>
                                     <VisualState x:Name="Checked">
                                         <Storyboard>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxForegroundChecked}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorPrimaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxBackgroundChecked}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxBorderBrushChecked}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Stroke">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckBackgroundStrokeChecked}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AccentFillColorDefaultBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Fill">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckBackgroundFillChecked}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AccentFillColorDefaultBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <DoubleAnimation
                                                 Storyboard.TargetName="CheckGlyph"
@@ -219,26 +219,26 @@
                                                 To="1"
                                                 Duration="0" />
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckGlyphForegroundChecked}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextOnAccentFillColorPrimaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                         </Storyboard>
                                     </VisualState>
                                     <VisualState x:Name="CheckedMouseOver">
                                         <Storyboard>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxForegroundCheckedPointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorPrimaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxBackgroundCheckedPointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxBorderBrushCheckedPointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Stroke">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckBackgroundStrokeCheckedPointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AccentFillColorSecondaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Fill">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckBackgroundFillCheckedPointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AccentFillColorSecondaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <DoubleAnimation
                                                 Storyboard.TargetName="CheckGlyph"
@@ -246,26 +246,26 @@
                                                 To="1"
                                                 Duration="0" />
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckGlyphForegroundCheckedPointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextOnAccentFillColorPrimaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                         </Storyboard>
                                     </VisualState>
                                     <VisualState x:Name="CheckedPressed">
                                         <Storyboard>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxForegroundCheckedPressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorPrimaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxBackgroundCheckedPressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxBorderBrushCheckedPressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Stroke">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckBackgroundStrokeCheckedPressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AccentFillColorTertiaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Fill">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckBackgroundFillCheckedPressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AccentFillColorTertiaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <DoubleAnimation
                                                 Storyboard.TargetName="CheckGlyph"
@@ -273,7 +273,7 @@
                                                 To="1"
                                                 Duration="0" />
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckGlyphForegroundCheckedPressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextOnAccentFillColorSecondaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="FocusVisualElement" Storyboard.TargetProperty="Opacity">
                                                 <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource FocusVisualElementOpacityPressed}" />
@@ -283,19 +283,19 @@
                                     <VisualState x:Name="CheckedDisabled">
                                         <Storyboard>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxForegroundCheckedDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorDisabledBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxBackgroundCheckedDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxBorderBrushCheckedDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Stroke">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckBackgroundStrokeCheckedDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlStrongStrokeColorDisabledBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Fill">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckBackgroundFillCheckedDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AccentFillColorDisabledBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <DoubleAnimation
                                                 Storyboard.TargetName="CheckGlyph"
@@ -303,26 +303,26 @@
                                                 To="1"
                                                 Duration="0" />
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckGlyphForegroundCheckedDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextOnAccentFillColorDisabledBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                         </Storyboard>
                                     </VisualState>
                                     <VisualState x:Name="Indeterminate">
                                         <Storyboard>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxForegroundIndeterminate}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorPrimaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxBackgroundIndeterminate}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxBorderBrushIndeterminate}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Stroke">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckBackgroundStrokeIndeterminate}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AccentFillColorDefaultBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Fill">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckBackgroundFillIndeterminate}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AccentFillColorDefaultBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" Storyboard.TargetProperty="Glyph">
                                                 <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxIndeterminateGlyph}" />
@@ -333,7 +333,7 @@
                                                 To="1"
                                                 Duration="0" />
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckGlyphForegroundIndeterminate}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextOnAccentFillColorPrimaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" Storyboard.TargetProperty="Margin">
                                                 <DiscreteObjectKeyFrame KeyTime="0">
@@ -347,19 +347,19 @@
                                     <VisualState x:Name="IndeterminateMouseOver">
                                         <Storyboard>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxForegroundIndeterminatePointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorPrimaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxBackgroundIndeterminatePointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxBorderBrushIndeterminatePointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Stroke">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckBackgroundStrokeIndeterminatePointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AccentFillColorSecondaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Fill">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckBackgroundFillIndeterminatePointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AccentFillColorSecondaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" Storyboard.TargetProperty="Glyph">
                                                 <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxIndeterminateGlyph}" />
@@ -370,7 +370,7 @@
                                                 To="1"
                                                 Duration="0" />
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckGlyphForegroundIndeterminatePointerOver}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextOnAccentFillColorPrimaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" Storyboard.TargetProperty="Margin">
                                                 <DiscreteObjectKeyFrame KeyTime="0">
@@ -384,19 +384,19 @@
                                     <VisualState x:Name="IndeterminatePressed">
                                         <Storyboard>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxForegroundIndeterminatePressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorPrimaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxBackgroundIndeterminatePressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxBorderBrushIndeterminatePressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Stroke">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckBackgroundStrokeIndeterminatePressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AccentFillColorTertiaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Fill">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckBackgroundFillIndeterminatePressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AccentFillColorTertiaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" Storyboard.TargetProperty="Glyph">
                                                 <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxIndeterminateGlyph}" />
@@ -407,7 +407,7 @@
                                                 To="1"
                                                 Duration="0" />
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckGlyphForegroundIndeterminatePressed}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextOnAccentFillColorSecondaryBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" Storyboard.TargetProperty="Margin">
                                                 <DiscreteObjectKeyFrame KeyTime="0">
@@ -424,19 +424,19 @@
                                     <VisualState x:Name="IndeterminateDisabled">
                                         <Storyboard>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxForegroundIndeterminateDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorDisabledBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxBackgroundIndeterminateDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxBorderBrushIndeterminateDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SubtleFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Stroke">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckBackgroundStrokeIndeterminateDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlStrongStrokeColorDisabledBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Fill">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckBackgroundFillIndeterminateDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AccentFillColorDisabledBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" Storyboard.TargetProperty="Glyph">
                                                 <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxIndeterminateGlyph}" />
@@ -447,7 +447,7 @@
                                                 To="1"
                                                 Duration="0" />
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CheckBoxCheckGlyphForegroundIndeterminateDisabled}" />
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextOnAccentFillColorDisabledBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" Storyboard.TargetProperty="Margin">
                                                 <DiscreteObjectKeyFrame KeyTime="0">

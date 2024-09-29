@@ -60,10 +60,10 @@
 
     <Style x:Key="DefaultThumbStyle" TargetType="Thumb">
         <Style.Setters>
-            <Setter Property="Background" Value="{StaticResource ThumbBackground}" />
+            <Setter Property="Background" Value="{StaticResource SystemControlBackgroundBaseLowBrush}" />
             <Setter Property="BorderThickness" Value="1" />
             <Setter Property="IsTabStop" Value="False" />
-            <Setter Property="BorderBrush" Value="{StaticResource ThumbBorderBrush}" />
+            <Setter Property="BorderBrush" Value="{StaticResource SystemControlHighlightTransparentBrush}" />
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Thumb">
@@ -75,14 +75,14 @@
                                 BorderThickness="{TemplateBinding BorderThickness}" />
                             <Border
                                 x:Name="BackgroundPointerOver"
-                                Background="{StaticResource ThumbBackgroundPointerOver}"
-                                BorderBrush="{StaticResource ThumbBorderBrushPointerOver}"
+                                Background="{StaticResource SystemControlHighlightBaseMediumLowBrush}"
+                                BorderBrush="{StaticResource SystemControlHighlightTransparentBrush}"
                                 BorderThickness="{TemplateBinding BorderThickness}"
                                 Opacity="0" />
                             <Border
                                 x:Name="BackgroundPressed"
-                                Background="{StaticResource ThumbBackgroundPressed}"
-                                BorderBrush="{StaticResource ThumbBorderBrushPressed}"
+                                Background="{StaticResource SystemControlHighlightBaseMediumBrush}"
+                                BorderBrush="{StaticResource SystemControlHighlightTransparentBrush}"
                                 BorderThickness="{TemplateBinding BorderThickness}"
                                 Opacity="0" />
                             <VisualStateManager.VisualStateGroups>
@@ -156,15 +156,15 @@
         <Border
             x:Name="Root"
             Padding="{StaticResource ScrollBarHorizontalIncreaseMargin}"
-            Background="{StaticResource ScrollBarButtonBackground}"
-            BorderBrush="{StaticResource ScrollBarButtonBorderBrush}">
+            Background="{StaticResource SubtleFillColorTransparentBrush}"
+            BorderBrush="{StaticResource SubtleFillColorTransparentBrush}">
             <local:FontIcon
                 x:Name="Arrow"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                 FontFamily="{StaticResource SymbolThemeFontFamily}"
                 FontSize="{StaticResource ScrollBarButtonArrowIconFontSize}"
-                Foreground="{StaticResource ScrollBarButtonArrowForeground}"
+                Foreground="{StaticResource ControlStrongFillColorDefaultBrush}"
                 Glyph="&#xEDDA;"
                 RenderTransformOrigin="0.5, 0.5">
                 <local:FontIcon.RenderTransform>
@@ -177,14 +177,14 @@
                     <VisualState x:Name="MouseOver">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Arrow" Storyboard.TargetProperty="Foreground">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ScrollBarButtonArrowForegroundPointerOver}" />
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorSecondaryBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
                     <VisualState x:Name="Pressed">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Arrow" Storyboard.TargetProperty="Foreground">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ScrollBarButtonArrowForegroundPressed}" />
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorSecondaryBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 RepeatBehavior="Forever"
@@ -205,7 +205,7 @@
                     <VisualState x:Name="Disabled">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Arrow" Storyboard.TargetProperty="Foreground">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ScrollBarButtonArrowForegroundDisabled}" />
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlStrongFillColorDisabledBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
@@ -218,15 +218,15 @@
         <Border
             x:Name="Root"
             Padding="{StaticResource ScrollBarHorizontalDecreaseMargin}"
-            Background="{StaticResource ScrollBarButtonBackground}"
-            BorderBrush="{StaticResource ScrollBarButtonBorderBrush}">
+            Background="{StaticResource SubtleFillColorTransparentBrush}"
+            BorderBrush="{StaticResource SubtleFillColorTransparentBrush}">
             <local:FontIcon
                 x:Name="Arrow"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                 FontFamily="{StaticResource SymbolThemeFontFamily}"
                 FontSize="{StaticResource ScrollBarButtonArrowIconFontSize}"
-                Foreground="{StaticResource ScrollBarButtonArrowForeground}"
+                Foreground="{StaticResource ControlStrongFillColorDefaultBrush}"
                 Glyph="&#xEDD9;"
                 RenderTransformOrigin="0.5, 0.5">
                 <local:FontIcon.RenderTransform>
@@ -239,14 +239,14 @@
                     <VisualState x:Name="MouseOver">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Arrow" Storyboard.TargetProperty="Foreground">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ScrollBarButtonArrowForegroundPointerOver}" />
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorSecondaryBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
                     <VisualState x:Name="Pressed">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Arrow" Storyboard.TargetProperty="Foreground">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ScrollBarButtonArrowForegroundPressed}" />
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorSecondaryBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 RepeatBehavior="Forever"
@@ -267,7 +267,7 @@
                     <VisualState x:Name="Disabled">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Arrow" Storyboard.TargetProperty="Foreground">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ScrollBarButtonArrowForegroundDisabled}" />
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlStrongFillColorDisabledBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
@@ -280,15 +280,15 @@
         <Border
             x:Name="Root"
             Padding="{StaticResource ScrollBarVerticalIncreaseMargin}"
-            Background="{StaticResource ScrollBarButtonBackground}"
-            BorderBrush="{StaticResource ScrollBarButtonBorderBrush}">
+            Background="{StaticResource SubtleFillColorTransparentBrush}"
+            BorderBrush="{StaticResource SubtleFillColorTransparentBrush}">
             <local:FontIcon
                 x:Name="Arrow"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                 FontFamily="{StaticResource SymbolThemeFontFamily}"
                 FontSize="{StaticResource ScrollBarButtonArrowIconFontSize}"
-                Foreground="{StaticResource ScrollBarButtonArrowForeground}"
+                Foreground="{StaticResource ControlStrongFillColorDefaultBrush}"
                 Glyph="&#xEDDC;"
                 RenderTransformOrigin="0.5, 0.5">
                 <local:FontIcon.RenderTransform>
@@ -301,14 +301,14 @@
                     <VisualState x:Name="MouseOver">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Arrow" Storyboard.TargetProperty="Foreground">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ScrollBarButtonArrowForegroundPointerOver}" />
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorSecondaryBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
                     <VisualState x:Name="Pressed">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Arrow" Storyboard.TargetProperty="Foreground">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ScrollBarButtonArrowForegroundPressed}" />
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorSecondaryBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 RepeatBehavior="Forever"
@@ -329,7 +329,7 @@
                     <VisualState x:Name="Disabled">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Arrow" Storyboard.TargetProperty="Foreground">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ScrollBarButtonArrowForegroundDisabled}" />
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlStrongFillColorDisabledBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
@@ -342,13 +342,13 @@
         <Border
             x:Name="Root"
             Padding="{StaticResource ScrollBarVerticalDecreaseMargin}"
-            Background="{StaticResource ScrollBarButtonBackground}"
-            BorderBrush="{StaticResource ScrollBarButtonBorderBrush}">
+            Background="{StaticResource SubtleFillColorTransparentBrush}"
+            BorderBrush="{StaticResource SubtleFillColorTransparentBrush}">
             <local:FontIcon
                 x:Name="Arrow"
                 FontFamily="{StaticResource SymbolThemeFontFamily}"
                 FontSize="{StaticResource ScrollBarButtonArrowIconFontSize}"
-                Foreground="{StaticResource ScrollBarButtonArrowForeground}"
+                Foreground="{StaticResource ControlStrongFillColorDefaultBrush}"
                 Glyph="&#xEDDB;"
                 RenderTransformOrigin="0.5, 0.5">
                 <local:FontIcon.RenderTransform>
@@ -361,14 +361,14 @@
                     <VisualState x:Name="MouseOver">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Arrow" Storyboard.TargetProperty="Foreground">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ScrollBarButtonArrowForegroundPointerOver}" />
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorSecondaryBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
                     <VisualState x:Name="Pressed">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Arrow" Storyboard.TargetProperty="Foreground">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ScrollBarButtonArrowForegroundPressed}" />
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextFillColorSecondaryBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 RepeatBehavior="Forever"
@@ -389,7 +389,7 @@
                     <VisualState x:Name="Disabled">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Arrow" Storyboard.TargetProperty="Foreground">
-                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ScrollBarButtonArrowForegroundDisabled}" />
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlStrongFillColorDisabledBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
@@ -412,7 +412,7 @@
                     <VisualState x:Name="Disabled">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ThumbVisual" Storyboard.TargetProperty="Fill">
-                                <DiscreteObjectKeyFrame KeyTime="{StaticResource ScrollBarColorChangeDuration}" Value="{StaticResource ScrollBarThumbFillDisabled}" />
+                                <DiscreteObjectKeyFrame KeyTime="{StaticResource ScrollBarColorChangeDuration}" Value="{StaticResource ControlStrongFillColorDisabledBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <DoubleAnimation
                                 Storyboard.TargetName="ThumbVisual"
@@ -440,7 +440,7 @@
                     <VisualState x:Name="Disabled">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ThumbVisual" Storyboard.TargetProperty="Fill">
-                                <DiscreteObjectKeyFrame KeyTime="{StaticResource ScrollBarColorChangeDuration}" Value="{StaticResource ScrollBarThumbFillDisabled}" />
+                                <DiscreteObjectKeyFrame KeyTime="{StaticResource ScrollBarColorChangeDuration}" Value="{StaticResource ControlStrongFillColorDisabledBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <DoubleAnimation
                                 Storyboard.TargetName="ThumbVisual"
@@ -458,15 +458,15 @@
         <Style.Setters>
             <Setter Property="MinWidth" Value="{StaticResource ScrollBarSize}" />
             <Setter Property="MinHeight" Value="{StaticResource ScrollBarSize}" />
-            <Setter Property="Background" Value="{StaticResource ScrollBarBackground}" />
-            <Setter Property="Foreground" Value="{StaticResource ScrollBarForeground}" />
-            <Setter Property="BorderBrush" Value="{StaticResource ScrollBarBorderBrush}" />
+            <Setter Property="Background" Value="{StaticResource SubtleFillColorTransparentBrush}" />
+            <Setter Property="Foreground" Value="{StaticResource SubtleFillColorTransparentBrush}" />
+            <Setter Property="BorderBrush" Value="{StaticResource SubtleFillColorTransparentBrush}" />
             <Setter Property="IsTabStop" Value="False" />
             <Setter Property="primitives:ControlHelper.CornerRadius" Value="{StaticResource ControlCornerRadius}" />
             <Setter Property="primitives:PressHelper.IsEnabled" Value="True" />
             <Setter Property="primitives:ScrollBarHelper.IsEnabled" Value="True" />
-            <Setter Property="primitives:ScrollBarHelper.CollapsedThumbBackgroundColor" Value="{StaticResource ScrollBarPanningThumbBackgroundColor}" />
-            <Setter Property="primitives:ScrollBarHelper.ExpandedThumbBackgroundColor" Value="{StaticResource ScrollBarThumbBackgroundColor}" />
+            <Setter Property="primitives:ScrollBarHelper.CollapsedThumbBackgroundColor" Value="{StaticResource ControlStrongFillColorDefault}" />
+            <Setter Property="primitives:ScrollBarHelper.ExpandedThumbBackgroundColor" Value="{StaticResource ControlStrongFillColorDefault}" />
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate x:Key="ScrollBarHorizontal" TargetType="ScrollBar">
@@ -488,11 +488,11 @@
                                         x:Name="HorizontalTrackRect"
                                         Grid.ColumnSpan="3"
                                         Margin="0"
-                                        Fill="{StaticResource ScrollBarTrackFill}"
+                                        Fill="{StaticResource AcrylicInAppFillColorDefaultBrush}"
                                         Opacity="0"
                                         RadiusX="{Binding Source={StaticResource ScrollBarCornerRadius}, Converter={StaticResource TopLeftCornerRadiusDoubleValueConverter2x}}"
                                         RadiusY="{Binding Source={StaticResource ScrollBarCornerRadius}, Converter={StaticResource BottomRightCornerRadiusDoubleValueConverter2x}}"
-                                        Stroke="{StaticResource ScrollBarTrackStroke}"
+                                        Stroke="{StaticResource AcrylicInAppFillColorDefaultBrush}"
                                         StrokeThickness="{StaticResource ScrollBarTrackBorderThemeThickness}" />
                                     <RepeatButton
                                         x:Name="HorizontalSmallDecrease"
@@ -515,8 +515,8 @@
                                         Height="{StaticResource ScrollBarHorizontalThumbMinHeight}"
                                         VerticalAlignment="Center"
                                         primitives:ControlHelper.CornerRadius="{TemplateBinding primitives:ControlHelper.CornerRadius}"
-                                        Background="{StaticResource ScrollBarPanningThumbBackground}"
-                                        BorderBrush="{StaticResource ScrollBarThumbBorderBrush}"
+                                        Background="{StaticResource ControlStrongFillColorDefaultBrush}"
+                                        BorderBrush="{StaticResource ControlFillColorTransparentBrush}"
                                         RenderTransformOrigin="0.5,1"
                                         Template="{StaticResource HorizontalThumbTemplate}">
                                         <Thumb.RenderTransform>
@@ -565,11 +565,11 @@
                                         x:Name="VerticalTrackRect"
                                         Grid.RowSpan="3"
                                         Margin="0"
-                                        Fill="{StaticResource ScrollBarTrackFill}"
+                                        Fill="{StaticResource AcrylicInAppFillColorDefaultBrush}"
                                         Opacity="0"
                                         RadiusX="{Binding Source={StaticResource ScrollBarCornerRadius}, Converter={StaticResource TopLeftCornerRadiusDoubleValueConverter2x}}"
                                         RadiusY="{Binding Source={StaticResource ScrollBarCornerRadius}, Converter={StaticResource BottomRightCornerRadiusDoubleValueConverter2x}}"
-                                        Stroke="{StaticResource ScrollBarTrackStroke}"
+                                        Stroke="{StaticResource AcrylicInAppFillColorDefaultBrush}"
                                         StrokeThickness="{StaticResource ScrollBarTrackBorderThemeThickness}" />
                                     <RepeatButton
                                         x:Name="VerticalSmallDecrease"
@@ -592,8 +592,8 @@
                                         Width="{StaticResource ScrollBarVerticalThumbMinWidth}"
                                         HorizontalAlignment="Center"
                                         primitives:ControlHelper.CornerRadius="{TemplateBinding primitives:ControlHelper.CornerRadius}"
-                                        Background="{StaticResource ScrollBarPanningThumbBackground}"
-                                        BorderBrush="{StaticResource ScrollBarThumbBorderBrush}"
+                                        Background="{StaticResource ControlStrongFillColorDefaultBrush}"
+                                        BorderBrush="{StaticResource ControlFillColorTransparentBrush}"
                                         RenderTransformOrigin="1,0.5"
                                         Template="{StaticResource VerticalThumbTemplate}">
                                         <Thumb.RenderTransform>

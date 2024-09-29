@@ -20,10 +20,10 @@
 
     <Style x:Key="DefaultProgressBarStyle" TargetType="ProgressBar">
         <Style.Setters>
-            <Setter Property="Foreground" Value="{StaticResource ProgressBarForeground}" />
-            <Setter Property="Background" Value="{StaticResource ProgressBarBackground}" />
+            <Setter Property="Foreground" Value="{StaticResource AccentFillColorDefaultBrush}" />
+            <Setter Property="Background" Value="{StaticResource ControlStrongStrokeColorDefaultBrush}" />
             <Setter Property="BorderThickness" Value="{StaticResource ProgressBarBorderThemeThickness}" />
-            <Setter Property="BorderBrush" Value="{StaticResource ProgressBarBorderBrush}" />
+            <Setter Property="BorderBrush" Value="{StaticResource ControlStrokeColorDefaultBrush}" />
             <Setter Property="MinHeight" Value="{StaticResource ProgressBarMinHeight}" />
             <Setter Property="Maximum" Value="100" />
             <Setter Property="IsTabStop" Value="False" />

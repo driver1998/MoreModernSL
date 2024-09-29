@@ -13,9 +13,9 @@
 
     <Style x:Key="DefaultToolTipStyle" TargetType="ToolTip">
         <Style.Setters>
-            <Setter Property="Foreground" Value="{StaticResource ToolTipForegroundBrush}" />
-            <Setter Property="Background" Value="{StaticResource ToolTipBackgroundBrush}" />
-            <Setter Property="BorderBrush" Value="{StaticResource ToolTipBorderBrush}" />
+            <Setter Property="Foreground" Value="{StaticResource TextFillColorPrimaryBrush}" />
+            <Setter Property="Background" Value="{StaticResource AcrylicInAppFillColorDefaultBrush}" />
+            <Setter Property="BorderBrush" Value="{StaticResource SurfaceStrokeColorFlyoutBrush}" />
             <Setter Property="BorderThickness" Value="{StaticResource ToolTipBorderThemeThickness}" />
             <Setter Property="FontFamily" Value="{StaticResource ContentControlThemeFontFamily}" />
             <Setter Property="FontWeight" Value="Normal" />
