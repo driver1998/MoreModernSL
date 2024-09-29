@@ -2,12 +2,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.32916.344
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernSL", "ModernSL\ModernSL.csproj", "{17CC9A07-CB4A-42C3-B62E-EDB83FDBC1BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModernSL", "ModernSL\ModernSL.csproj", "{17CC9A07-CB4A-42C3-B62E-EDB83FDBC1BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernSL.Web", "ModernSL.Web\ModernSL.Web.csproj", "{3565EA53-9B00-4657-AD44-5826A2C161DB}"
-	ProjectSection(ProjectDependencies) = postProject
-		{17CC9A07-CB4A-42C3-B62E-EDB83FDBC1BB} = {17CC9A07-CB4A-42C3-B62E-EDB83FDBC1BB}
-	EndProjectSection
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModernSL.Browser", "ModernSL.Browser\ModernSL.Browser.csproj", "{96140D25-1F4D-4F7C-B7DD-C9AF821F4CD1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +16,10 @@ Global
 		{17CC9A07-CB4A-42C3-B62E-EDB83FDBC1BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17CC9A07-CB4A-42C3-B62E-EDB83FDBC1BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17CC9A07-CB4A-42C3-B62E-EDB83FDBC1BB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3565EA53-9B00-4657-AD44-5826A2C161DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3565EA53-9B00-4657-AD44-5826A2C161DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3565EA53-9B00-4657-AD44-5826A2C161DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3565EA53-9B00-4657-AD44-5826A2C161DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96140D25-1F4D-4F7C-B7DD-C9AF821F4CD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96140D25-1F4D-4F7C-B7DD-C9AF821F4CD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96140D25-1F4D-4F7C-B7DD-C9AF821F4CD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96140D25-1F4D-4F7C-B7DD-C9AF821F4CD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
