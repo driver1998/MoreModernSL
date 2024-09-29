@@ -122,7 +122,7 @@
                                             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PillTransform" Storyboard.TargetProperty="ScaleY">
                                                 <SplineDoubleKeyFrame
                                                     KeySpline="1,0,0,0"
-                                                    KeyTime="{StaticResource ComboBoxItemScaleAnimationDuration}"
+                                                    KeyTime="00:00:00.167"
                                                     Value="1" />
                                             </DoubleAnimationUsingKeyFrames>
                                         </Storyboard>
@@ -167,7 +167,7 @@
                                             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PillTransform" Storyboard.TargetProperty="ScaleY">
                                                 <SplineDoubleKeyFrame
                                                     KeySpline="0,0,0,1"
-                                                    KeyTime="{StaticResource ComboBoxItemScaleAnimationDuration}"
+                                                    KeyTime="00:00:00.167"
                                                     Value="{StaticResource ComboBoxItemPillMinScale}" />
                                             </DoubleAnimationUsingKeyFrames>
                                         </Storyboard>
@@ -244,7 +244,7 @@
                                             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PillTransform" Storyboard.TargetProperty="ScaleY">
                                                 <SplineDoubleKeyFrame
                                                     KeySpline="0,0,0,1"
-                                                    KeyTime="{StaticResource ComboBoxItemScaleAnimationDuration}"
+                                                    KeyTime="00:00:00.167"
                                                     Value="{StaticResource ComboBoxItemPillMinScale}" />
                                             </DoubleAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="LayoutRoot" Storyboard.TargetProperty="Background">
@@ -365,8 +365,8 @@
                                     <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Shdw" Storyboard.TargetProperty="Opacity">
                                         <DiscreteDoubleKeyFrame KeyTime="0:0:0" Value="0.0" />
                                         <SplineDoubleKeyFrame
-                                            KeySpline="{StaticResource ControlFastOutSlowInKeySpline}"
-                                            KeyTime="{StaticResource ControlNormalAnimationDuration}"
+                                            KeySpline="0,0,0,1"
+                                            KeyTime="00:00:00.250"
                                             Value="1.0" />
                                     </DoubleAnimationUsingKeyFrames>
                                 </Storyboard>
@@ -374,8 +374,8 @@
                                     <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Shdw" Storyboard.TargetProperty="Opacity">
                                         <DiscreteDoubleKeyFrame KeyTime="0:0:0" Value="1.0" />
                                         <SplineDoubleKeyFrame
-                                            KeySpline="{StaticResource ControlFastOutSlowInKeySpline}"
-                                            KeyTime="{StaticResource ControlFastAnimationDuration}"
+                                            KeySpline="0,0,0,1"
+                                            KeyTime="00:00:00.167"
                                             Value="0.0" />
                                     </DoubleAnimationUsingKeyFrames>
                                 </Storyboard>

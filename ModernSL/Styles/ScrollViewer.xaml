@@ -94,14 +94,14 @@
                                         <!--<VisualTransition From="MouseIndicator" To="NoIndicator">
                                             <Storyboard>
                                                 <ObjectAnimationUsingKeyFrames Storyboard.TargetName="HorizontalScrollBar" Storyboard.TargetProperty="(primitives:ScrollBarHelper.IndicatorMode)">
-                                                    <DiscreteObjectKeyFrame KeyTime="{StaticResource ScrollViewerSeparatorContractDelay}">
+                                                    <DiscreteObjectKeyFrame KeyTime="00:00:02">
                                                         <DiscreteObjectKeyFrame.Value>
                                                             <primitives:ScrollingIndicatorMode>None</primitives:ScrollingIndicatorMode>
                                                         </DiscreteObjectKeyFrame.Value>
                                                     </DiscreteObjectKeyFrame>
                                                 </ObjectAnimationUsingKeyFrames>
                                                 <ObjectAnimationUsingKeyFrames Storyboard.TargetName="VerticalScrollBar" Storyboard.TargetProperty="(primitives:ScrollBarHelper.IndicatorMode)">
-                                                    <DiscreteObjectKeyFrame KeyTime="{StaticResource ScrollViewerSeparatorContractDelay}">
+                                                    <DiscreteObjectKeyFrame KeyTime="00:00:02">
                                                         <DiscreteObjectKeyFrame.Value>
                                                             <primitives:ScrollingIndicatorMode>None</primitives:ScrollingIndicatorMode>
                                                         </DiscreteObjectKeyFrame.Value>

@@ -140,10 +140,10 @@
                                                 <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ColorAnimationUsingKeyFrames Storyboard.TargetName="OuterEllipse" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
-                                                <LinearColorKeyFrame KeyTime="{StaticResource ControlFasterAnimationDuration}" Value="{Binding Color, Source={StaticResource ControlStrongStrokeColorDefaultBrush}}" />
+                                                <LinearColorKeyFrame KeyTime="00:00:00.083" Value="{Binding Color, Source={StaticResource ControlStrongStrokeColorDefaultBrush}}" />
                                             </ColorAnimationUsingKeyFrames>
                                             <ColorAnimationUsingKeyFrames Storyboard.TargetName="OuterEllipse" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                                <LinearColorKeyFrame KeyTime="{StaticResource ControlFasterAnimationDuration}" Value="{Binding Color, Source={StaticResource ControlAltFillColorTertiaryBrush}}" />
+                                                <LinearColorKeyFrame KeyTime="00:00:00.083" Value="{Binding Color, Source={StaticResource ControlAltFillColorTertiaryBrush}}" />
                                             </ColorAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckOuterEllipse" Storyboard.TargetProperty="Stroke">
                                                 <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AccentFillColorSecondaryBrush}" />
@@ -159,14 +159,14 @@
                                             </ObjectAnimationUsingKeyFrames>
                                             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" Storyboard.TargetProperty="Width">
                                                 <SplineDoubleKeyFrame
-                                                    KeySpline="{StaticResource ControlFastOutSlowInKeySpline}"
-                                                    KeyTime="{StaticResource ControlNormalAnimationDuration}"
+                                                    KeySpline="0,0,0,1"
+                                                    KeyTime="00:00:00.250"
                                                     Value="14" />
                                             </DoubleAnimationUsingKeyFrames>
                                             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" Storyboard.TargetProperty="Height">
                                                 <SplineDoubleKeyFrame
-                                                    KeySpline="{StaticResource ControlFastOutSlowInKeySpline}"
-                                                    KeyTime="{StaticResource ControlNormalAnimationDuration}"
+                                                    KeySpline="0,0,0,1"
+                                                    KeyTime="00:00:00.250"
                                                     Value="14" />
                                             </DoubleAnimationUsingKeyFrames>
                                         </Storyboard>
@@ -183,10 +183,10 @@
                                                 <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ColorAnimationUsingKeyFrames Storyboard.TargetName="OuterEllipse" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
-                                                <LinearColorKeyFrame KeyTime="{StaticResource ControlFasterAnimationDuration}" Value="{Binding Color, Source={StaticResource ControlStrongStrokeColorDisabledBrush}}" />
+                                                <LinearColorKeyFrame KeyTime="00:00:00.083" Value="{Binding Color, Source={StaticResource ControlStrongStrokeColorDisabledBrush}}" />
                                             </ColorAnimationUsingKeyFrames>
                                             <ColorAnimationUsingKeyFrames Storyboard.TargetName="OuterEllipse" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                                <LinearColorKeyFrame KeyTime="{StaticResource ControlFasterAnimationDuration}" Value="{Binding Color, Source={StaticResource ControlAltFillColorQuarternaryBrush}}" />
+                                                <LinearColorKeyFrame KeyTime="00:00:00.083" Value="{Binding Color, Source={StaticResource ControlAltFillColorQuarternaryBrush}}" />
                                             </ColorAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckOuterEllipse" Storyboard.TargetProperty="Stroke">
                                                 <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AccentFillColorTertiaryBrush}" />
@@ -202,14 +202,14 @@
                                             </ObjectAnimationUsingKeyFrames>
                                             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" Storyboard.TargetProperty="Width">
                                                 <SplineDoubleKeyFrame
-                                                    KeySpline="{StaticResource ControlFastOutSlowInKeySpline}"
-                                                    KeyTime="{StaticResource ControlNormalAnimationDuration}"
+                                                    KeySpline="0,0,0,1"
+                                                    KeyTime="00:00:00.250"
                                                     Value="10" />
                                             </DoubleAnimationUsingKeyFrames>
                                             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" Storyboard.TargetProperty="Height">
                                                 <SplineDoubleKeyFrame
-                                                    KeySpline="{StaticResource ControlFastOutSlowInKeySpline}"
-                                                    KeyTime="{StaticResource ControlNormalAnimationDuration}"
+                                                    KeySpline="0,0,0,1"
+                                                    KeyTime="00:00:00.250"
                                                     Value="10" />
                                             </DoubleAnimationUsingKeyFrames>
                                             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PressedCheckGlyph" Storyboard.TargetProperty="Opacity">
@@ -217,14 +217,14 @@
                                             </DoubleAnimationUsingKeyFrames>
                                             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PressedCheckGlyph" Storyboard.TargetProperty="Width">
                                                 <SplineDoubleKeyFrame
-                                                    KeySpline="{StaticResource ControlFastOutSlowInKeySpline}"
-                                                    KeyTime="{StaticResource ControlFastAnimationDuration}"
+                                                    KeySpline="0,0,0,1"
+                                                    KeyTime="00:00:00.167"
                                                     Value="10" />
                                             </DoubleAnimationUsingKeyFrames>
                                             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PressedCheckGlyph" Storyboard.TargetProperty="Height">
                                                 <SplineDoubleKeyFrame
-                                                    KeySpline="{StaticResource ControlFastOutSlowInKeySpline}"
-                                                    KeyTime="{StaticResource ControlFastAnimationDuration}"
+                                                    KeySpline="0,0,0,1"
+                                                    KeyTime="00:00:00.167"
                                                     Value="10" />
                                             </DoubleAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="FocusVisualElement" Storyboard.TargetProperty="Opacity">
@@ -244,16 +244,16 @@
                                                 <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ControlFillColorTransparentBrush}" />
                                             </ObjectAnimationUsingKeyFrames>
                                             <ColorAnimationUsingKeyFrames Storyboard.TargetName="OuterEllipse" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
-                                                <LinearColorKeyFrame KeyTime="{StaticResource ControlFasterAnimationDuration}" Value="{Binding Color, Source={StaticResource ControlStrongStrokeColorDisabledBrush}}" />
+                                                <LinearColorKeyFrame KeyTime="00:00:00.083" Value="{Binding Color, Source={StaticResource ControlStrongStrokeColorDisabledBrush}}" />
                                             </ColorAnimationUsingKeyFrames>
                                             <ColorAnimationUsingKeyFrames Storyboard.TargetName="OuterEllipse" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                                <LinearColorKeyFrame KeyTime="{StaticResource ControlFasterAnimationDuration}" Value="{Binding Color, Source={StaticResource ControlAltFillColorDisabledBrush}}" />
+                                                <LinearColorKeyFrame KeyTime="00:00:00.083" Value="{Binding Color, Source={StaticResource ControlAltFillColorDisabledBrush}}" />
                                             </ColorAnimationUsingKeyFrames>
                                             <ColorAnimationUsingKeyFrames Storyboard.TargetName="CheckOuterEllipse" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
-                                                <LinearColorKeyFrame KeyTime="{StaticResource ControlFasterAnimationDuration}" Value="{Binding Color, Source={StaticResource AccentFillColorDisabledBrush}}" />
+                                                <LinearColorKeyFrame KeyTime="00:00:00.083" Value="{Binding Color, Source={StaticResource AccentFillColorDisabledBrush}}" />
                                             </ColorAnimationUsingKeyFrames>
                                             <ColorAnimationUsingKeyFrames Storyboard.TargetName="CheckOuterEllipse" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                                <LinearColorKeyFrame KeyTime="{StaticResource ControlFasterAnimationDuration}" Value="{Binding Color, Source={StaticResource AccentFillColorDisabledBrush}}" />
+                                                <LinearColorKeyFrame KeyTime="00:00:00.083" Value="{Binding Color, Source={StaticResource AccentFillColorDisabledBrush}}" />
                                             </ColorAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" Storyboard.TargetProperty="Fill">
                                                 <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TextOnAccentFillColorPrimaryBrush}" />
@@ -263,14 +263,14 @@
                                             </ObjectAnimationUsingKeyFrames>
                                             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" Storyboard.TargetProperty="Width">
                                                 <SplineDoubleKeyFrame
-                                                    KeySpline="{StaticResource ControlFastOutSlowInKeySpline}"
-                                                    KeyTime="{StaticResource ControlFastAnimationDuration}"
+                                                    KeySpline="0,0,0,1"
+                                                    KeyTime="00:00:00.167"
                                                     Value="14" />
                                             </DoubleAnimationUsingKeyFrames>
                                             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="CheckGlyph" Storyboard.TargetProperty="Height">
                                                 <SplineDoubleKeyFrame
-                                                    KeySpline="{StaticResource ControlFastOutSlowInKeySpline}"
-                                                    KeyTime="{StaticResource ControlFastAnimationDuration}"
+                                                    KeySpline="0,0,0,1"
+                                                    KeyTime="00:00:00.167"
                                                     Value="14" />
                                             </DoubleAnimationUsingKeyFrames>
                                         </Storyboard>

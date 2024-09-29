@@ -90,15 +90,15 @@
                                             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="SliderInnerThumb" Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleX)">
                                                 <!--  0.86 is relative scale from 14px to 12px  -->
                                                 <SplineDoubleKeyFrame
-                                                    KeySpline="{StaticResource ControlFastOutSlowInKeySpline}"
-                                                    KeyTime="{StaticResource ControlFastAnimationDuration}"
+                                                    KeySpline="0,0,0,1"
+                                                    KeyTime="00:00:00.167"
                                                     Value="0.86" />
                                             </DoubleAnimationUsingKeyFrames>
                                             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="SliderInnerThumb" Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleY)">
                                                 <!--  0.86 is relative scale from 14px to 12px  -->
                                                 <SplineDoubleKeyFrame
-                                                    KeySpline="{StaticResource ControlFastOutSlowInKeySpline}"
-                                                    KeyTime="{StaticResource ControlFastAnimationDuration}"
+                                                    KeySpline="0,0,0,1"
+                                                    KeyTime="00:00:00.167"
                                                     Value="0.86" />
                                             </DoubleAnimationUsingKeyFrames>
                                         </Storyboard>
@@ -108,15 +108,15 @@
                                             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="SliderInnerThumb" Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleX)">
                                                 <!--  1.167 is relative scale from 12px to 14px  -->
                                                 <SplineDoubleKeyFrame
-                                                    KeySpline="{StaticResource ControlFastOutSlowInKeySpline}"
-                                                    KeyTime="{StaticResource ControlNormalAnimationDuration}"
+                                                    KeySpline="0,0,0,1"
+                                                    KeyTime="00:00:00.250"
                                                     Value="1.167" />
                                             </DoubleAnimationUsingKeyFrames>
                                             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="SliderInnerThumb" Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleY)">
                                                 <!--  1.167 is relative scale from 12px to 14px  -->
                                                 <SplineDoubleKeyFrame
-                                                    KeySpline="{StaticResource ControlFastOutSlowInKeySpline}"
-                                                    KeyTime="{StaticResource ControlNormalAnimationDuration}"
+                                                    KeySpline="0,0,0,1"
+                                                    KeyTime="00:00:00.250"
                                                     Value="1.167" />
                                             </DoubleAnimationUsingKeyFrames>
                                         </Storyboard>
@@ -126,15 +126,15 @@
                                             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="SliderInnerThumb" Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleX)">
                                                 <!--  0.71 is relative scale from 14px to 10px  -->
                                                 <SplineDoubleKeyFrame
-                                                    KeySpline="{StaticResource ControlFastOutSlowInKeySpline}"
-                                                    KeyTime="{StaticResource ControlNormalAnimationDuration}"
+                                                    KeySpline="0,0,0,1"
+                                                    KeyTime="00:00:00.250"
                                                     Value="0.71" />
                                             </DoubleAnimationUsingKeyFrames>
                                             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="SliderInnerThumb" Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleY)">
                                                 <!--  0.71 is relative scale from 14px to 10px  -->
                                                 <SplineDoubleKeyFrame
-                                                    KeySpline="{StaticResource ControlFastOutSlowInKeySpline}"
-                                                    KeyTime="{StaticResource ControlNormalAnimationDuration}"
+                                                    KeySpline="0,0,0,1"
+                                                    KeyTime="00:00:00.250"
                                                     Value="0.71" />
                                             </DoubleAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="FocusVisualElement" Storyboard.TargetProperty="Opacity">
@@ -147,15 +147,15 @@
                                             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="SliderInnerThumb" Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleX)">
                                                 <!--  1.167 is relative scale from 12px to 14px  -->
                                                 <SplineDoubleKeyFrame
-                                                    KeySpline="{StaticResource ControlFastOutSlowInKeySpline}"
-                                                    KeyTime="{StaticResource ControlFastAnimationDuration}"
+                                                    KeySpline="0,0,0,1"
+                                                    KeyTime="00:00:00.167"
                                                     Value="1.167" />
                                             </DoubleAnimationUsingKeyFrames>
                                             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="SliderInnerThumb" Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleY)">
                                                 <!--  1.167 is relative scale from 12px to 14px  -->
                                                 <SplineDoubleKeyFrame
-                                                    KeySpline="{StaticResource ControlFastOutSlowInKeySpline}"
-                                                    KeyTime="{StaticResource ControlFastAnimationDuration}"
+                                                    KeySpline="0,0,0,1"
+                                                    KeyTime="00:00:00.167"
                                                     Value="1.167" />
                                             </DoubleAnimationUsingKeyFrames>
                                         </Storyboard>

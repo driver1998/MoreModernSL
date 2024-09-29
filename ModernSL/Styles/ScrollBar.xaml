@@ -412,13 +412,13 @@
                     <VisualState x:Name="Disabled">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ThumbVisual" Storyboard.TargetProperty="Fill">
-                                <DiscreteObjectKeyFrame KeyTime="{StaticResource ScrollBarColorChangeDuration}" Value="{StaticResource ControlStrongFillColorDisabledBrush}" />
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.083" Value="{StaticResource ControlStrongFillColorDisabledBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <DoubleAnimation
                                 Storyboard.TargetName="ThumbVisual"
                                 Storyboard.TargetProperty="Opacity"
                                 To="0"
-                                Duration="{StaticResource ScrollBarOpacityChangeDuration}" />
+                                Duration="00:00:00.083" />
                         </Storyboard>
                     </VisualState>
                 </VisualStateGroup>
@@ -440,13 +440,13 @@
                     <VisualState x:Name="Disabled">
                         <Storyboard>
                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ThumbVisual" Storyboard.TargetProperty="Fill">
-                                <DiscreteObjectKeyFrame KeyTime="{StaticResource ScrollBarColorChangeDuration}" Value="{StaticResource ControlStrongFillColorDisabledBrush}" />
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.083" Value="{StaticResource ControlStrongFillColorDisabledBrush}" />
                             </ObjectAnimationUsingKeyFrames>
                             <DoubleAnimation
                                 Storyboard.TargetName="ThumbVisual"
                                 Storyboard.TargetProperty="Opacity"
                                 To="0"
-                                Duration="{StaticResource ScrollBarOpacityChangeDuration}" />
+                                Duration="00:00:00.083" />
                         </Storyboard>
                     </VisualState>
                 </VisualStateGroup>
@@ -625,100 +625,100 @@
                                         <VisualTransition From="Expanded" To="Collapsed">
                                             <Storyboard>
                                                 <DoubleAnimation
-                                                    BeginTime="{StaticResource ScrollBarContractBeginTime}"
+                                                    BeginTime="00:00:00.50"
                                                     Storyboard.TargetName="VerticalSmallIncrease"
                                                     Storyboard.TargetProperty="Opacity"
                                                     To="0"
-                                                    Duration="{StaticResource ScrollBarOpacityChangeDuration}" />
+                                                    Duration="00:00:00.083" />
                                                 <DoubleAnimation
-                                                    BeginTime="{StaticResource ScrollBarContractBeginTime}"
+                                                    BeginTime="00:00:00.50"
                                                     Storyboard.TargetName="VerticalLargeIncrease"
                                                     Storyboard.TargetProperty="Opacity"
                                                     To="0"
-                                                    Duration="{StaticResource ScrollBarOpacityChangeDuration}" />
+                                                    Duration="00:00:00.083" />
                                                 <DoubleAnimation
-                                                    BeginTime="{StaticResource ScrollBarContractBeginTime}"
+                                                    BeginTime="00:00:00.50"
                                                     Storyboard.TargetName="VerticalLargeDecrease"
                                                     Storyboard.TargetProperty="Opacity"
                                                     To="0"
-                                                    Duration="{StaticResource ScrollBarOpacityChangeDuration}" />
+                                                    Duration="00:00:00.083" />
                                                 <DoubleAnimation
-                                                    BeginTime="{StaticResource ScrollBarContractBeginTime}"
+                                                    BeginTime="00:00:00.50"
                                                     Storyboard.TargetName="VerticalSmallDecrease"
                                                     Storyboard.TargetProperty="Opacity"
                                                     To="0"
-                                                    Duration="{StaticResource ScrollBarOpacityChangeDuration}" />
+                                                    Duration="00:00:00.083" />
                                                 <DoubleAnimation
-                                                    BeginTime="{StaticResource ScrollBarContractBeginTime}"
+                                                    BeginTime="00:00:00.50"
                                                     Storyboard.TargetName="VerticalTrackRect"
                                                     Storyboard.TargetProperty="Opacity"
                                                     To="0"
-                                                    Duration="{StaticResource ScrollBarOpacityChangeDuration}" />
+                                                    Duration="00:00:00.083" />
                                                 <DoubleAnimation
-                                                    BeginTime="{StaticResource ScrollBarContractBeginTime}"
+                                                    BeginTime="00:00:00.50"
                                                     Storyboard.TargetName="HorizontalSmallIncrease"
                                                     Storyboard.TargetProperty="Opacity"
                                                     To="0"
-                                                    Duration="{StaticResource ScrollBarOpacityChangeDuration}" />
+                                                    Duration="00:00:00.083" />
                                                 <DoubleAnimation
-                                                    BeginTime="{StaticResource ScrollBarContractBeginTime}"
+                                                    BeginTime="00:00:00.50"
                                                     Storyboard.TargetName="HorizontalLargeIncrease"
                                                     Storyboard.TargetProperty="Opacity"
                                                     To="0"
-                                                    Duration="{StaticResource ScrollBarOpacityChangeDuration}" />
+                                                    Duration="00:00:00.083" />
                                                 <DoubleAnimation
-                                                    BeginTime="{StaticResource ScrollBarContractBeginTime}"
+                                                    BeginTime="00:00:00.50"
                                                     Storyboard.TargetName="HorizontalLargeDecrease"
                                                     Storyboard.TargetProperty="Opacity"
                                                     To="0"
-                                                    Duration="{StaticResource ScrollBarOpacityChangeDuration}" />
+                                                    Duration="00:00:00.083" />
                                                 <DoubleAnimation
-                                                    BeginTime="{StaticResource ScrollBarContractBeginTime}"
+                                                    BeginTime="00:00:00.50"
                                                     Storyboard.TargetName="HorizontalSmallDecrease"
                                                     Storyboard.TargetProperty="Opacity"
                                                     To="0"
-                                                    Duration="{StaticResource ScrollBarOpacityChangeDuration}" />
+                                                    Duration="00:00:00.083" />
                                                 <DoubleAnimation
-                                                    BeginTime="{StaticResource ScrollBarContractBeginTime}"
+                                                    BeginTime="00:00:00.50"
                                                     Storyboard.TargetName="HorizontalTrackRect"
                                                     Storyboard.TargetProperty="Opacity"
                                                     To="0"
-                                                    Duration="{StaticResource ScrollBarOpacityChangeDuration}" />
+                                                    Duration="00:00:00.083" />
 
                                                 <DoubleAnimationUsingKeyFrames
-                                                    BeginTime="{StaticResource ScrollBarContractBeginTime}"
+                                                    BeginTime="00:00:00.50"
                                                     Storyboard.TargetName="VerticalThumb"
                                                     Storyboard.TargetProperty="Width">
                                                     <SplineDoubleKeyFrame
                                                         KeySpline="0,0,0,1"
-                                                        KeyTime="{StaticResource ScrollBarContractDuration}"
+                                                        KeyTime="00:00:00.167"
                                                         Value="{StaticResource ScrollBarVerticalThumbMinWidth}" />
                                                 </DoubleAnimationUsingKeyFrames>
                                                 <DoubleAnimationUsingKeyFrames
-                                                    BeginTime="{StaticResource ScrollBarContractBeginTime}"
+                                                    BeginTime="00:00:00.50"
                                                     Storyboard.TargetName="VerticalThumbTransform"
                                                     Storyboard.TargetProperty="X">
                                                     <SplineDoubleKeyFrame
                                                         KeySpline="0,0,0,1"
-                                                        KeyTime="{StaticResource ScrollBarContractDuration}"
+                                                        KeyTime="00:00:00.167"
                                                         Value="{StaticResource ScrollBarThumbOffset}" />
                                                 </DoubleAnimationUsingKeyFrames>
                                                 <DoubleAnimationUsingKeyFrames
-                                                    BeginTime="{StaticResource ScrollBarContractBeginTime}"
+                                                    BeginTime="00:00:00.50"
                                                     Storyboard.TargetName="HorizontalThumb"
                                                     Storyboard.TargetProperty="Height">
                                                     <SplineDoubleKeyFrame
                                                         KeySpline="0,0,0,1"
-                                                        KeyTime="{StaticResource ScrollBarContractDuration}"
+                                                        KeyTime="00:00:00.167"
                                                         Value="{StaticResource ScrollBarHorizontalThumbMinHeight}" />
                                                 </DoubleAnimationUsingKeyFrames>
                                                 <DoubleAnimationUsingKeyFrames
-                                                    BeginTime="{StaticResource ScrollBarContractBeginTime}"
+                                                    BeginTime="00:00:00.50"
                                                     Storyboard.TargetName="HorizontalThumbTransform"
                                                     Storyboard.TargetProperty="Y">
                                                     <SplineDoubleKeyFrame
                                                         KeySpline="0,0,0,1"
-                                                        KeyTime="{StaticResource ScrollBarContractDuration}"
+                                                        KeyTime="00:00:00.167"
                                                         Value="{StaticResource ScrollBarThumbOffset}" />
                                                 </DoubleAnimationUsingKeyFrames>
                                             </Storyboard>
@@ -728,102 +728,102 @@
                                     <VisualState x:Name="Expanded">
                                         <Storyboard>
                                             <DoubleAnimation
-                                                BeginTime="{StaticResource ScrollBarExpandBeginTime}"
+                                                BeginTime="00:00:00.40"
                                                 Storyboard.TargetName="VerticalSmallIncrease"
                                                 Storyboard.TargetProperty="Opacity"
                                                 To="1"
-                                                Duration="{StaticResource ScrollBarOpacityChangeDuration}" />
+                                                Duration="00:00:00.083" />
                                             <DoubleAnimation
-                                                BeginTime="{StaticResource ScrollBarExpandBeginTime}"
+                                                BeginTime="00:00:00.40"
                                                 Storyboard.TargetName="VerticalLargeIncrease"
                                                 Storyboard.TargetProperty="Opacity"
                                                 To="1"
-                                                Duration="{StaticResource ScrollBarOpacityChangeDuration}" />
+                                                Duration="00:00:00.083" />
                                             <DoubleAnimation
-                                                BeginTime="{StaticResource ScrollBarExpandBeginTime}"
+                                                BeginTime="00:00:00.40"
                                                 Storyboard.TargetName="VerticalLargeDecrease"
                                                 Storyboard.TargetProperty="Opacity"
                                                 To="1"
-                                                Duration="{StaticResource ScrollBarOpacityChangeDuration}" />
+                                                Duration="00:00:00.083" />
                                             <DoubleAnimation
-                                                BeginTime="{StaticResource ScrollBarExpandBeginTime}"
+                                                BeginTime="00:00:00.40"
                                                 Storyboard.TargetName="VerticalSmallDecrease"
                                                 Storyboard.TargetProperty="Opacity"
                                                 To="1"
-                                                Duration="{StaticResource ScrollBarOpacityChangeDuration}" />
+                                                Duration="00:00:00.083" />
                                             <DoubleAnimation
-                                                BeginTime="{StaticResource ScrollBarExpandBeginTime}"
+                                                BeginTime="00:00:00.40"
                                                 Storyboard.TargetName="VerticalTrackRect"
                                                 Storyboard.TargetProperty="Opacity"
                                                 To="1"
-                                                Duration="{StaticResource ScrollBarOpacityChangeDuration}" />
+                                                Duration="00:00:00.083" />
                                             <DoubleAnimation
-                                                BeginTime="{StaticResource ScrollBarExpandBeginTime}"
+                                                BeginTime="00:00:00.40"
                                                 Storyboard.TargetName="HorizontalSmallIncrease"
                                                 Storyboard.TargetProperty="Opacity"
                                                 To="1"
-                                                Duration="{StaticResource ScrollBarOpacityChangeDuration}" />
+                                                Duration="00:00:00.083" />
                                             <DoubleAnimation
-                                                BeginTime="{StaticResource ScrollBarExpandBeginTime}"
+                                                BeginTime="00:00:00.40"
                                                 Storyboard.TargetName="HorizontalLargeIncrease"
                                                 Storyboard.TargetProperty="Opacity"
                                                 To="1"
-                                                Duration="{StaticResource ScrollBarOpacityChangeDuration}" />
+                                                Duration="00:00:00.083" />
                                             <DoubleAnimation
-                                                BeginTime="{StaticResource ScrollBarExpandBeginTime}"
+                                                BeginTime="00:00:00.40"
                                                 Storyboard.TargetName="HorizontalLargeDecrease"
                                                 Storyboard.TargetProperty="Opacity"
                                                 To="1"
-                                                Duration="{StaticResource ScrollBarOpacityChangeDuration}" />
+                                                Duration="00:00:00.083" />
                                             <DoubleAnimation
-                                                BeginTime="{StaticResource ScrollBarExpandBeginTime}"
+                                                BeginTime="00:00:00.40"
                                                 Storyboard.TargetName="HorizontalSmallDecrease"
                                                 Storyboard.TargetProperty="Opacity"
                                                 To="1"
-                                                Duration="{StaticResource ScrollBarOpacityChangeDuration}" />
+                                                Duration="00:00:00.083" />
                                             <DoubleAnimation
-                                                BeginTime="{StaticResource ScrollBarExpandBeginTime}"
+                                                BeginTime="00:00:00.40"
                                                 Storyboard.TargetName="HorizontalTrackRect"
                                                 Storyboard.TargetProperty="Opacity"
                                                 To="1"
-                                                Duration="{StaticResource ScrollBarOpacityChangeDuration}" />
+                                                Duration="00:00:00.083" />
 
                                             <!--  Because of the blurriness caused by SCALE animation performed on the object with rounded corners, we have to use dependent animation on width to rerasterize the mask on every tick of the animation.  -->
                                             <DoubleAnimationUsingKeyFrames
-                                                BeginTime="{StaticResource ScrollBarExpandBeginTime}"
+                                                BeginTime="00:00:00.40"
                                                 Storyboard.TargetName="VerticalThumb"
                                                 Storyboard.TargetProperty="Width">
                                                 <SplineDoubleKeyFrame
                                                     KeySpline="0,0,0,1"
-                                                    KeyTime="{StaticResource ScrollBarExpandDuration}"
+                                                    KeyTime="00:00:00.167"
                                                     Value="{StaticResource ScrollBarSize}" />
                                             </DoubleAnimationUsingKeyFrames>
 
                                             <DoubleAnimationUsingKeyFrames
-                                                BeginTime="{StaticResource ScrollBarExpandBeginTime}"
+                                                BeginTime="00:00:00.40"
                                                 Storyboard.TargetName="VerticalThumbTransform"
                                                 Storyboard.TargetProperty="X">
                                                 <SplineDoubleKeyFrame
                                                     KeySpline="0,0,0,1"
-                                                    KeyTime="{StaticResource ScrollBarExpandDuration}"
+                                                    KeyTime="00:00:00.167"
                                                     Value="0" />
                                             </DoubleAnimationUsingKeyFrames>
                                             <DoubleAnimationUsingKeyFrames
-                                                BeginTime="{StaticResource ScrollBarExpandBeginTime}"
+                                                BeginTime="00:00:00.40"
                                                 Storyboard.TargetName="HorizontalThumb"
                                                 Storyboard.TargetProperty="Height">
                                                 <SplineDoubleKeyFrame
                                                     KeySpline="0,0,0,1"
-                                                    KeyTime="{StaticResource ScrollBarExpandDuration}"
+                                                    KeyTime="00:00:00.167"
                                                     Value="{StaticResource ScrollBarSize}" />
                                             </DoubleAnimationUsingKeyFrames>
                                             <DoubleAnimationUsingKeyFrames
-                                                BeginTime="{StaticResource ScrollBarExpandBeginTime}"
+                                                BeginTime="00:00:00.40"
                                                 Storyboard.TargetName="HorizontalThumbTransform"
                                                 Storyboard.TargetProperty="Y">
                                                 <SplineDoubleKeyFrame
                                                     KeySpline="0,0,0,1"
-                                                    KeyTime="{StaticResource ScrollBarExpandDuration}"
+                                                    KeyTime="00:00:00.167"
                                                     Value="0" />
                                             </DoubleAnimationUsingKeyFrames>
                                         </Storyboard>
